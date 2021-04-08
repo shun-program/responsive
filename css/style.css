@@ -587,3 +587,37 @@ body {
     padding-left: 15px;
   }
 }
+
+/* □実現したいこと
+   　 カメラの画像とweb制作事業の両端に余白を入れたい
+
+    □発生している問題
+    　width: 100vwにすると余白がなくなる
+
+    .service-content_inner {
+    display: block;
+    width: 100vw;
+    position: relative;
+    transform: translateX(-20%);
+  }
+  .service-img {
+    display: block;
+    width: 100vw;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  .service-content_inner-second {
+    transform: translateX(-40%);
+  }
+  .service-img_second {
+    transform: translateX(0%);
+  }
+
+    □試したこと
+    　widthを90%にすると余白はできるが、
+    web制作事業の要素がずれてしまいます。
+    また、transform: translateXを使い
+    位置を合わせることはできるが、微妙にずれてしまいます。
+
+    */
