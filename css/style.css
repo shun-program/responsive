@@ -528,6 +528,10 @@ body {
     display: none;
   }
 
+  .header-logo {
+    margin: 0 auto;
+  }
+
   .catchcopy {
     text-align: center;
     margin-top: -30%;
