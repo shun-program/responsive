@@ -490,7 +490,7 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   #hamburger {
     width: 40px;
     height: 40px;
@@ -530,8 +530,8 @@ body {
 
   .catchcopy {
     text-align: center;
-    margin-top: -50%;
-    padding-right: 30px;
+    margin-top: -30%;
+    padding-right: 40px;
   }
 
   .news {
@@ -539,7 +539,7 @@ body {
     width: 100vw;
   }
 
-  .mission-wrap {
+  .mission {
     flex-wrap: wrap;
   }
 
@@ -547,24 +547,17 @@ body {
     text-align: left;
     width: 90%;
   }
-  .service-content_inner {
-    display: block;
-    width: 100vw;
-    position: relative;
-    transform: translateX(-20%);
-  }
-  .service-img {
-    display: block;
-    width: 100vw;
-    position: relative;
-    transform: translateX(-50%);
+
+  .service-img,
+  .service-img_second {
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .service-content_inner-second {
-    transform: translateX(-40%);
-  }
-  .service-img_second {
-    transform: translateX(0%);
+  .service-content_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: static;
   }
 
   .recruit-company {
@@ -579,7 +572,7 @@ body {
 
   .faq {
     display: block;
-    width: 73.5vw;
+    width: auto;
     text-align: center;
   }
 
@@ -587,37 +580,3 @@ body {
     padding-left: 15px;
   }
 }
-
-/* □実現したいこと
-   　 カメラの画像とweb制作事業の両端に余白を入れたい
-
-    □発生している問題
-    　width: 100vwにすると余白がなくなる
-
-    .service-content_inner {
-    display: block;
-    width: 100vw;
-    position: relative;
-    transform: translateX(-20%);
-  }
-  .service-img {
-    display: block;
-    width: 100vw;
-    position: relative;
-    transform: translateX(-50%);
-  }
-
-  .service-content_inner-second {
-    transform: translateX(-40%);
-  }
-  .service-img_second {
-    transform: translateX(0%);
-  }
-
-    □試したこと
-    　widthを90%にすると余白はできるが、
-    web制作事業の要素がずれてしまいます。
-    また、transform: translateXを使い
-    位置を合わせることはできるが、微妙にずれてしまいます。
-
-    */
